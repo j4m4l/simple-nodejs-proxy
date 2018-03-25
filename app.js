@@ -1,4 +1,5 @@
 var express = require('express');  
+var cors = require('cors');
 var request = require('request');
 
 
@@ -10,7 +11,8 @@ if (process.argv == null || process.argv.length >= 3)
 if (serverHost == undefined) 
   throw new Error('specify host of server which will be proxied');
 
-var app = express();  
+var app = express();
+app.use(cors());
 app.use('/', function(req, res) {
   var url = serverHost + req.url;
   console.debug(req.url + ' --> ' + url);
