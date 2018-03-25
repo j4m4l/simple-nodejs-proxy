@@ -1,0 +1,21 @@
+{
+  "name": "proxy-server",
+  "version": "0.1",
+  "description": "Http proxy server to bypass CORS issue",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "request": "^2.85.0"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "author": "Mufaddal Jamal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/j4m4l/simple-nodejs-proxy"
+  },
+}
